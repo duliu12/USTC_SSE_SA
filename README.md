@@ -1,4 +1,4 @@
-# USTC_SSE_SA2020
+# USTC_SSE_SA
 
 
 
@@ -24,11 +24,11 @@
 ### 工作流程
 
 1. register上线。
-2. server上线（server项目启动）并发送消息通知register（自动），register将其加入其维护的服务器列表，此后server和register通过websocket保持长链接，并以一定的频率发送心跳包。
+2. server上线（server项目启动）并发送消息通知register（自动），register将其加入其维护的服务器列表，此后server和register通过websocket保持长链接，并以一定的频率发送心跳包。本系统的server可以扩展多个，需要指定每个serverSpringBoot配置文件中的qingparkserver的id、name为不同值
 3. webmanage后台系统后端启动，会自动向register请求server的地址，依此server获取后台管理系统的地址，用以在client发生变化时实时通知后台管理系统更新UI页面。
 4. webmanage前端页面启动，会和webmanage后台管理后端保持websocket长链接，并在client状态发生改变时候通过此长链接来更新UI页面，使用了vue的emit和on函数机制进行消息的传递。
 5. client上线，会自动选择一台可用的服务器，点击上线即可实现实时监控
-6. 上述几点中项目的启动流程只有register需要保持最先启动，剩余项目启动先后顺序无要求，但是有一点，server与register保持的连接断开以后只能重启工程重连
+6. 上述几点中项目的启动流程只有register需要保持最先启动，剩余项目启动先后顺序无要求，但是有一点，server与register保持的连接断开以后只能重启工程重连。
 
 ### 组件间通信机制
 
