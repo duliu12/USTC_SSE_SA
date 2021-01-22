@@ -66,3 +66,15 @@ type字段在global/Global.java中定义，data为返回数据
 park.sql为client项目使用到数据库
 
 其他项目使用到数据库在parkserver.sql中
+
+### 运行命令
+
+SpringBoot项目直接在idea中打开运行即可
+
+vue项目首先需要安装依赖，再运行。执行以下命令
+
+```bash
+npm install
+npm run serve
+```
+
