@@ -1,0 +1,25 @@
+server:
+  port: 8084
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/parkserver?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+websocket:
+  maxTimeout: 120000
+qingparkserver:
+  id: 1
+  name: 华东服务器
+  api: /park
+  maxsize: 100
+  clientlistapi: /client/list
+  clientofflineapi: /client/offline/
+  webapi: /web/webapi
+
+register:
+  serverlistapi: /server/list
+  ip: http://127.0.0.1:8083
+  webapi: /web/webapi

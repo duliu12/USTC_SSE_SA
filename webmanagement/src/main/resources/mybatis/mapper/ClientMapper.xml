@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ustc.qingpark.webmanage.mapper.ClientMapper" >
+    <resultMap id="ClientList" type="com.ustc.qingpark.webmanage.dto.ClientIndexDTO" >
+        <id column="id" property="clientId" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"  />
+    </resultMap>
+    <select id="listClient" resultMap="ClientList">
+        select distinct client_online.client_id as id,client_online.client_name as name from client_online order by
+        client_online.client_id
+
+    </select>
+</mapper>

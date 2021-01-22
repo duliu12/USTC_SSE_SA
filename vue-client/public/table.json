@@ -1,0 +1,40 @@
+{
+    "list": [{
+            "id": 0,
+            "name": "留下停车场",
+            "address": "浙江省杭州市西湖区留和路288号",
+            "maxsize":240,
+            "currsize":0,
+            "state": "online",
+            "date": "2019-11-1"
+        },
+        {
+            "id": 1,
+            "name": "中国科大停车场",
+            "address": "江苏省苏州市工业园区仁爱路166号",
+            "maxsize":450,
+            "currsize":0,
+            "state": "online",
+            "date": "2019-12-3"
+        },
+        {
+            "id": 2,
+            "name": "苏州大学北停车场",
+            "address": "江苏省苏州市工业园区仁爱路199号",
+            "maxsize":300,
+            "currsize":0,
+            "state": "offline",
+            "date": "2019-5-21"
+        },
+        {
+            "id": 3,
+            "name": "中国人民大学苏州校区西停车场",
+            "address": "江苏省苏州市工业园区仁爱路158号",
+            "maxsize":370,
+            "currsize":0,
+            "state": "online",
+            "date": "2020-3-21"
+        }
+    ],
+    "pageTotal": 4
+}

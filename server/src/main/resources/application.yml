@@ -1,0 +1,21 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/parkserver?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+websocket:
+  maxTimeout: 120000
+qingparkserver:
+  id: 1
+  name: 华东服务器
+  api: /park
+  maxsize: 100
+
+register:
+  onlineapi: ws://127.0.0.1:8083/server/online/
+  #  onlineapi: ws://192.168.1.103:81/regist
+  #onlineapi: ws://192.168.1.105:8083/server/online/
